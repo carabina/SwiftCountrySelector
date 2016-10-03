@@ -1,0 +1,6 @@
+framework module SwiftCountrySelector {
+  umbrella header "SwiftCountrySelector-umbrella.h"
+
+  export *
+  module * { export * }
+}

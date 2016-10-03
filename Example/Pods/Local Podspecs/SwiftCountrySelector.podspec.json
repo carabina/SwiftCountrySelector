@@ -1,0 +1,22 @@
+{
+  "name": "SwiftCountrySelector",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftCountrySelector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SwiftCountrySelector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Gregg Luskin": "gdluskin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SwiftCountrySelector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftCountrySelector/Classes/**/*"
+}
