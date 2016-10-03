@@ -30,9 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SwiftCountrySelector/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SwiftCountrySelector' => ['SwiftCountrySelector/Assets/*.png']
-  # }
+  s.resource_bundles = { 'SwiftCountrySelector' => 'SwiftCountrySelector/Assets/*.xcassets' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

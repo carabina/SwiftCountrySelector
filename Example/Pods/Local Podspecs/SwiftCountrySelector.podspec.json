@@ -18,5 +18,8 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SwiftCountrySelector/Classes/**/*"
+  "source_files": "SwiftCountrySelector/Classes/**/*",
+  "resource_bundles": {
+    "SwiftCountrySelector": "SwiftCountrySelector/Assets/*.xcassets"
+  }
 }
