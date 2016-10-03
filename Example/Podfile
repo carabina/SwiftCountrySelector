@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftCountrySelector_Example' do
+  pod 'SwiftCountrySelector', :path => '../'
+
+  target 'SwiftCountrySelector_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
