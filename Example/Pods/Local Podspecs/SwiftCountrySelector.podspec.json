@@ -20,6 +20,6 @@
   },
   "source_files": "SwiftCountrySelector/Classes/**/*",
   "resource_bundles": {
-    "SwiftCountrySelector": "SwiftCountrySelector/Assets/*.xcassets"
+    "SwiftCountrySelector": "SwiftCountrySelector/*.xcassets"
   }
 }

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12EF51FC9151CEF08D651E544036F62A /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D182B03A882C644C8E7C3238B648BB3F /* Flags.xcassets */; };
 		197BE9E0AE6286B45CC735D4AAE54883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		4233A717EA838213D91D72B76E0A2F43 /* DialingCodes.plist in Sources */ = {isa = PBXBuildFile; fileRef = DD2EE8280EF11C97F500FA77277EB44A /* DialingCodes.plist */; };
 		4A970C00E31D757EF07BDB0BED399DC0 /* SCSDefaultPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA3CD43B6CEA24C37BBF7D8B78F2E6 /* SCSDefaultPickerView.swift */; };
+		5721BD961DA305F60082E1E4 /* Flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5721BD951DA305F60082E1E4 /* Flags.bundle */; };
 		59393A824CAD76F242FBFB02F2830E82 /* SwiftCountrySelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5297CDDA96C5D52B4D3201783541D174 /* SwiftCountrySelector.bundle */; };
 		68E043E03ACE7BD872E485DE3CA63D29 /* Pods-SwiftCountrySelector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C6C42056008464B28859C823896CCD /* Pods-SwiftCountrySelector_Tests-dummy.m */; };
 		7B35D79C422470BE98010F93C3B9239E /* Pods-SwiftCountrySelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E13A8E7825B1074459FB2BD345DD292 /* Pods-SwiftCountrySelector_Example-dummy.m */; };
@@ -55,6 +55,7 @@
 		481E11C097C8C61A9C08F502621C5751 /* Pods-SwiftCountrySelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCountrySelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5297CDDA96C5D52B4D3201783541D174 /* SwiftCountrySelector.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCountrySelector.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C6C42056008464B28859C823896CCD /* Pods-SwiftCountrySelector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCountrySelector_Tests-dummy.m"; sourceTree = "<group>"; };
+		5721BD951DA305F60082E1E4 /* Flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Flags.bundle; sourceTree = "<group>"; };
 		5C0BC918A6FFA56526E5BA2B876F4018 /* Pods-SwiftCountrySelector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCountrySelector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E13A8E7825B1074459FB2BD345DD292 /* Pods-SwiftCountrySelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCountrySelector_Example-dummy.m"; sourceTree = "<group>"; };
 		67E50B6CCA48CCA5A492BC379AB0362C /* SwiftCountrySelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftCountrySelector.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		B8CD4F69E1BEEE47C3ACB49833A8AD94 /* SwiftCountrySelector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCountrySelector.xcconfig; sourceTree = "<group>"; };
 		CE2104AD255AFB68673283D9B9DDE258 /* Pods-SwiftCountrySelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCountrySelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D182B03A882C644C8E7C3238B648BB3F /* Flags.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 		D1BF670AFB1A33946F905C9C8D9BA0CF /* Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DB90840DED6DCFF99705ADE44CCDFD04 /* SwiftCountrySelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCountrySelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDDB485AFAB82F0C6B04AEFB0FB9630 /* Pods-SwiftCountrySelector_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCountrySelector_Example-resources.sh"; sourceTree = "<group>"; };
@@ -142,14 +142,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		2943B98AED52EB6CABA9AE1D7C1FA110 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6A91C0B9D2B46D7CE78E95342475DB64 /* SwiftCountrySelector */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,14 +180,6 @@
 			path = "Target Support Files/Pods-SwiftCountrySelector_Example";
 			sourceTree = "<group>";
 		};
-		6A91C0B9D2B46D7CE78E95342475DB64 /* SwiftCountrySelector */ = {
-			isa = PBXGroup;
-			children = (
-				BA535BA4EF713451933889A63D12B852 /* Assets */,
-			);
-			path = SwiftCountrySelector;
-			sourceTree = "<group>";
-		};
 		767B5DDE5A796E4CE1C76FED91ED8C96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +205,7 @@
 		B1026E831D9AC4CB28730059E0C6854A /* SwiftCountrySelector */ = {
 			isa = PBXGroup;
 			children = (
-				2943B98AED52EB6CABA9AE1D7C1FA110 /* Resources */,
+				5721BD951DA305F60082E1E4 /* Flags.bundle */,
 				0D6337963713DB067BBEA49988F1F338 /* Support Files */,
 				B8F3B711A99793DB055D38ABB31A72C3 /* SwiftCountrySelector */,
 			);
@@ -235,14 +219,6 @@
 				5100168F95CFF31779882BC9C5114AA1 /* Classes */,
 			);
 			path = SwiftCountrySelector;
-			sourceTree = "<group>";
-		};
-		BA535BA4EF713451933889A63D12B852 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				D182B03A882C644C8E7C3238B648BB3F /* Flags.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -415,7 +391,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12EF51FC9151CEF08D651E544036F62A /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59393A824CAD76F242FBFB02F2830E82 /* SwiftCountrySelector.bundle in Resources */,
+				5721BD961DA305F60082E1E4 /* Flags.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

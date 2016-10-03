@@ -36,14 +36,18 @@ class SCSDefaultPickerView: UIView {
         
         /** The Flag Indicator */
         let flagImageView = UIImageView(frame: CGRect(x: 30, y: 0, width: 30, height: self.frame.height))
-        
-        let frameworkBundle = Bundle(for: SwiftCountrySelector.self)
-        let flagImage = UIImage(named: country.code.lowercased(), in: frameworkBundle, compatibleWith: nil)
-        flagImageView.image = flagImage
-        flagImageView.contentMode = .scaleAspectFill
-        flagImageView.layer.cornerRadius = 1.5
-        flagImageView.layer.masksToBounds = true
-        self.addSubview(flagImageView)
+        let podBundle = Bundle(for: SwiftCountrySelector.self) // or any other class within the pod. technically doesn't have the be the same as the current file, but good practice to
+        if let url = podBundle.url(forResource: "Flags", withExtension: "bundle"){   // leave the extension as "bundle"
+            let mykitBundle = Bundle(url: url)
+            let flagImage = UIImage(named: country.code.lowercased(), in:mykitBundle, compatibleWith: nil)
+            flagImageView.image = flagImage
+            flagImageView.contentMode = .scaleAspectFill
+            flagImageView.layer.cornerRadius = 1.5
+            flagImageView.layer.masksToBounds = true
+            self.addSubview(flagImageView)
+        } else {
+            print("NO IMAGE")
+        }
         
         /** The Phone Code Label */
         let codeLabel = UILabel(frame: CGRect(x: self.frame.width - offset, y: 0, width: offset - 25, height: self.frame.height))
